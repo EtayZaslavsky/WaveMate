@@ -1,0 +1,24 @@
+a#logo{
+	margin: 1rem 2rem;
+    z-index: 71;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.intro{
+	margin: 1rem 1rem;
+}
+
+div.intro h1{
+	margin-bottom: 1rem;
+}
+
+@media all and (max-width:750px){
+	#menu{
+		display: none;
+	}
+	a#logo {
+		margin: 3.5vw;
+	}
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>WaveMate | Surfers Sharing Data</title>
+		<meta name="author" content="Etay Zaslavsky" />
+		<meta name="description" content="WaveMate - a Social Network for Surfers" />
+		<meta name="keywords" content="WaveMate,surfing" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<meta property="og:title" content="WaveMate">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="WaveMate - a Social Network for Surfers">
+		<meta property="og:image" content="/apple-touch-icon.png">
+
+		<meta name="Resource-type" content="Document" />
+		
+		<link rel="stylesheet" type="text/css" href="jquery.fullpage.min.css" />
+		<link rel="stylesheet" type="text/css" href="inline.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+
+		<meta name="apple-mobile-web-app-title" content="WaveMate">
+		<meta name="application-name" content="WaveMate">
+
+
+		<!--[if IE]>
+			<script type="text/javascript">
+				 var console = { log: function() {} };
+			</script>
+		<![endif]-->
+	</head>
+	<body>
+		<a href="/" id="logo">		
+			<object type="image/svg+xml" data="logo.svg">
+			  WaveMate
+			</object>
+		</a>
+		
+		<ul id="menu">			
+			<li data-menuanchor="download"><a href="#download">Download</a></li>
+			<li data-menuanchor="shareObservations"><a href="#shareObservations">Share your Observations</a></li>
+			<li data-menuanchor="howItWorks"><a href="#howItWorks">How it Works?</a></li>
+			<li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+		</ul>
+
+		<div id="fullpage">
+
+			<div class="section active" id="home">
+				<h1>WaveMate</h1>
+				<h2>Social Network for Surfers</h2>
+				<br />
+				<div class="button" id="download"><a href="app/WaveMate.apk">Download</a></div>
+			</div>
+			
+			<div class="section" id="section2">
+				<div class="intro">
+					<h1 class="animated infinite bounce">Be Updated.</h1>
+					<p>get videos and surf updates from every spot, online.</p>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<div class="intro">
+					<h1 class="animated infinite tada">Share your Observations</h1>
+					<p>let other surfers know how is the surf, and share the data you would like to have.</p>
+				</div>
+			</div>
+			<div class="section" id="download">
+				<div class="intro">
+					<h1 class="animated infinite jello">Join the Groove</h1>
+					<p>get WaveMate today, and start the revolution.</p>
+					<br />
+					<div class="button" id="download"><a href="app/WaveMate.apk">Download</a></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div id="infoMenu">
+			<ul>
+				<li>
+					<a href="#" id="showExamples">Contact Me</a>
+					<div id="examplesList">
+						<div class="column">
+							<h3><a target="_blank" href="https://www.facebook.com/etay.zaslavsky">Facebook</a></h3>
+						</div>
+						<div class="column">
+							<h3><a href="mailto:etay068@gmail.com">Email</a></h3>
+						</div>
+						<div class="column">
+							<h3><a href="tel:+972585503552">Call Me</a></h3>
+						</div>
+					</div>
+				</li>
+				<li>
+					<h3><a target="_blank" href="https://alvarotrigo.com/fullPage/">Credits</a></h3>
+				</li>
+			</ul>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.fullpage.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					sectionsColor: ['#1bbc9b', '#4BBFC3', '#67B9FF', '#fab1a0', '#ccddff'],
+					anchors: ['home', 'howItWorks', 'shareObservations', 'download'],
+					menu: '#menu',
+					css3: true,
+					scrollingSpeed: 1000
+				});
+
+				$('#showExamples').click(function(e) {
+					e.stopPropagation();
+					e.preventDefault();
+					$('#examplesList').toggle();
+				});
+
+				$('html').click(function() {
+					$('#examplesList').hide();
+				});
+
+			});
+		</script>
+	</body>
+</html>
