@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <!-- Beach FAB -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/beach_fab"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="16dp"
+            android:src="@drawable/beach"
+            app:backgroundTint="@color/button_main_bg" />
+
+        <Spinner
+            android:id="@+id/beach_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/white"
+            android:textColor="@color/button_main_bg" />
+
+        <EditText
+            android:id="@+id/geocode_editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dip"
+            android:background="@color/input_main_bg"
+            android:hint="Beach + Beach Name + City"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/show_button"
+            android:layout_width="fill_parent"
+            android:layout_height="71dp"
+            android:layout_marginTop="20dip"
+            android:background="@color/button_main_bg"
+            android:text="@string/btn_show"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:text="@string/btn_logout"
+            android:textAllCaps="false"
+            android:textColor="@color/button_main_bg"
+            android:textSize="15dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/upload_fab"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@drawable/plus"
+            app:backgroundTint="@color/button_main_bg" />
+
+    </LinearLayout>
+</LinearLayout>

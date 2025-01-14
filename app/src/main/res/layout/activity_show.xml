@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/time_textView"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/height_textView"
+        android:layout_alignBottom="@+id/height_textView"
+        android:layout_alignEnd="@+id/next_button"
+        android:text="time"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/height_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/crowd_textView"
+        android:layout_marginTop="26dp"
+        android:text="height"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/crowd_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/desc_textView"
+        android:layout_below="@+id/height_textView"
+        android:layout_marginTop="17dp"
+        android:text="crowd"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/desc_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/crowd_textView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="14dp"
+        android:text="description"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/beach_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/crowd_textView"
+        android:layout_alignEnd="@+id/time_textView"
+        android:text="beach" />
+
+    <VideoView
+        android:id="@+id/VideoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/desc_textView"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/prev_button"
+        android:layout_alignBottom="@+id/prev_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp"
+        android:background="@color/button_main_bg"
+        android:elevation="10dp"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <Button
+        android:id="@+id/prev_button"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/desc_textView"
+        android:layout_marginBottom="60dp"
+        android:background="@color/button_main_bg"
+        android:elevation="10dp"
+        android:text="PREV"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/beach_textView"
+        android:layout_below="@+id/desc_textView"
+        android:background="@color/white"
+        android:text="SHARE"
+        android:textColor="@color/button_main_bg" />
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Wave Mate</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+
+    <string name="btn_upload">UPLOAD</string>
+    <string name="btn_show">SHOW</string>
+    <string name="btn_play">PLAY</string>
+    <string name="btn_back">BACK</string>
+
+
+    <string name="hint_update_description">Description</string>
+    <string name="hint_update_height">Wave Height</string>
+    <string name="hint_update_crowd">How Crowded</string>
+
+    <string name="main_default_hello">HELLO!</string>
+
+    <string-array name="crowd_array">
+        <item>heaven on earth</item>
+        <item>good lone spot</item>
+        <item>few people</item>
+        <item>not too much</item>
+        <item>possible</item>
+        <item>very crowded</item>
+        <item>just... dont.</item>
+    </string-array>
+
+</resources>
